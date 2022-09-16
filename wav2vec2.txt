@@ -1,0 +1,16 @@
+torch==1.9.0
+torchvision==0.10.0
+torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+datasets==1.11.0
+transformers==4.9.1
+jiwer
+ipywidgets
+pythainlp==2.3.1
+torchaudio==0.9.0
+datasets[s3]
+deepcut
+pydub
+flask
+werkzeug
+pythainlp
+pip

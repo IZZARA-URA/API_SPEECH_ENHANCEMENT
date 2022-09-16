@@ -1,0 +1,138 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+:root {
+  --gray: #555460;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html body {
+  background-color: #e0e0e0;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.space-upload {
+  display: flex;
+}
+
+.wrapper {
+  width: 430px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
+  margin-left: 50px;
+}
+.wrapper header {
+  color: var(--gray);
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form {
+  height: 167px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed var(--gray);
+}
+form :where(i, p) {
+  color: var(--gray);
+}
+form i {
+  font-size: 50px;
+}
+form p {
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+section .row {
+  margin-bottom: 10px;
+  background: #94969c85;
+  list-style: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .row i {
+  color: var(--gray);
+  font-size: 30px;
+}
+section .details span {
+  font-size: 14px;
+}
+.uploaded-area.onprogress {
+  max-height: 150px;
+}
+
+.uploaded-area .row .content {
+  display: flex;
+  align-items: center;
+}
+.uploaded-area .row .details {
+  display: flex;
+  margin-left: 15px;
+  flex-direction: column;
+}
+.uploaded-area .row .details .size {
+  color: #404040;
+  font-size: 11px;
+}
+.uploaded-area i.fa-check {
+  font-size: 16px;
+}
+
+.btn.btn-outline-secondary {
+  width: 100%;
+  color: var(--gray);
+}
+.space_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.link_page {
+  display: flex;
+  margin-top: 10px;
+}
+.link_wav {
+  margin-left: 20px;
+}
+
+.text_h {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.text_l {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.link-dark:hover {
+  transition: all 0.2s ease;
+  filter: brightness(150%);
+}
