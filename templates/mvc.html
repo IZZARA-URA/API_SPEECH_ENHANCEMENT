@@ -1,0 +1,14 @@
+<h2 class="nav-item active" aria-current="page" style="display: flex; justify-content: center">
+  {{header}}
+</h2>
+{% extends "layout.html" %} {% block content %}
+<form action="http://localhost:5000/MackCycleGan-VC" method="POST" enctype="multipart/form-data">
+  <input type="file" name="files" , multiple="true" />
+  <input type="submit" />
+</form>
+{% for message in get_flashed_messages() %}
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  {{message}}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+{% endfor %} {% endblock %}
